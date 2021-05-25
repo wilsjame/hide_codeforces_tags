@@ -1,0 +1,12 @@
+{
+  "name": "Show/Hide Codeforces Tags",
+  "description": "Show and hide Codeforces problem tags.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+      {
+          "matches": ["https://codeforces.com/problemset"],
+          "js": ["content_script.js"]
+      }
+  ]
+}
