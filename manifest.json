@@ -5,8 +5,13 @@
   "manifest_version": 3,
   "content_scripts": [
       {
-          "matches": ["https://codeforces.com/problemset"],
-          "js": ["content_script.js"]
+          "matches": ["https://codeforces.com/problemset*"],
+          "exclude_matches": ["https://codeforces.com/problemset/problem*"],
+          "js": ["problemset.js"]
+      },
+      {
+          "matches": ["https://codeforces.com/problemset/problem*"],
+          "js": ["problem.js"]
       }
   ]
 }

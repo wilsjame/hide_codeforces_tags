@@ -2,8 +2,7 @@
 // - fix showing problem tags on page load 
 // - change hidden spacing as to not reflect tag length
 
-// at the moment, codeforces problem tags are of class 'notice'
-let tags = document.getElementsByClassName('notice');
+let tags = document.getElementsByClassName('tag-box');
 
 // add unique button to each problem tag
 for (let i = 0; i < tags.length; i++) {
