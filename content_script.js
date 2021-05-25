@@ -4,20 +4,18 @@
 // - change hidden spacing as to not reflect tag length
 
 // at the moment, codeforces problem tags are of class 'notice'
-let elements = document.getElementsByClassName('notice');
+let tags = document.getElementsByClassName('notice');
 
 // add unique button to each problem tag
-for (let i = 0; i < elements.length; i++) {
-  elements[i].style.visibility = 'hidden';
-  elements[i].id = 'problem_tag_' +  i;
-  let tag = document.getElementById('problem_tag_' + i);
+for (let i = 0; i < tags.length; i++) {
+  tags[i].style.visibility = 'hidden';
   let btn = document.createElement('button'); 
   btn.type = 'button';
   btn.innerHTML = '+';
   btn.addEventListener('click', function() {
-    toggle(tag);
+    toggle(tags[i]);
   });
-  tag.insertAdjacentElement('beforebegin', btn); // 'afterend' works too
+  tags[i].insertAdjacentElement('beforebegin', btn); // 'afterend' works too
 }
 
 function toggle(tag) {
