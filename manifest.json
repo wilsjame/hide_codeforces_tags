@@ -10,7 +10,7 @@
           "js": ["problemset.js"]
       },
       {
-          "matches": ["https://codeforces.com/problemset/problem*"],
+          "matches": ["https://codeforces.com/problemset/problem*", "https://codeforces.com/contest*"],
           "js": ["problem.js"]
       }
   ]
